@@ -1,0 +1,62 @@
+body {background-image: url("motorway.jpeg");
+    background-size:cover;
+    background-attachment: fixed;}
+
+#pageHeading {color:red;
+	font-family: Arial, 'arial', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 30px;}
+	
+	
+
+#mainForm {
+    font-family: Arial, 'arial', sans-serif;
+    background-color: #F8F8F8;
+    border-style: ridge;
+    padding-top:25px;
+    padding-bottom: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+.formTitle{
+	text-align: center;
+	font-family: Arial, 'arial', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom:25px;
+}	
+.formSubTitle{padding-bottom: 25px;
+    text-align: center;
+	font-weight: bold;}
+	
+.formField{padding-bottom:25px;
+    padding-left: 60px;
+	
+}
+	
+
+.formInput : focus {
+    border: 3px solid #555;
+}
+
+.submitButton{
+    display:block;
+    margin: 0 auto;
+    border-radius: 24px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#bookingStatus {font-family: Arial, ‘arial’, sans-serif;
+text-align: center;
+color: white;
+padding-bottom: 40px;
+padding-top:40px;
+font-size: 24px;
+background-color:#13133a;
+margin-left: 600px;
+margin-right: 600px; }

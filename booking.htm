@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cabs Online</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript" src="submitForm.js"></script>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class"row">
+<div id="pageHeading">
+<div class="col-md-12"><h1>Cabs Online<h1></div>
+</div>
+</div>
+    <div id="mainForm">
+  <form name="mainForm">
+  <div class="formTitle"><i class="fa fa-car"></i>  BOOK A TAXI  <i class="fa fa-car"></i></div>
+	<div class="formSubTitle">Booking Information</div>
+    <div class="formField">
+        <label>First Name: </label>
+        <input type="text" class="formInput" name="firstName" /><br>
+    </div>
+    <div class="formField">
+        <label>Last Name: </label>
+        <input type="text" class="formInput" name="lastName" /><br>
+    </div>
+    <div class="formField">
+        <label>Mobile Number: </label>
+        <input type="text" class="formInput" name="mobileNumber" /><br>
+    </div>
+	<div class="formSubTitle">Pick Up Location</div>
+	<div class="formField">
+        <label>Unit Number(if applicable): </label>
+        <input type="text" class="formInput" name="unitNumber"><br>
+    </div>
+	<div class="formField">
+        <label>Street Number: </label>
+        <input type="text" class="formInput" name="streetNumber" /><br>
+    </div>
+	<div class="formField">
+	   <label>Street name: </label>
+        <input type="text" class="formInput" name="streetName" /><br>
+    </div>
+	<div class="formField">
+	   <label>Suburb: </label>
+        <input type="text" class="formInput" name="pickUpSuburb" /><br>
+    </div>
+	<div class="formField">
+	   <label>Destination suburb: </label>
+        <input type="text" class="formInput" name="destSuburb" /><br>
+    </div>
+	<div class="formField">
+	   <label>Pick up date: </label>
+        <input type="text" class="formInput" name="date" placeholder="yy/mm/dd"/><br>
+    </div>
+	<div class="formField">
+	   <label>Pick up time: </label>
+        <input type="time" class="formInput" name="time" /><br>
+    </div>
+
+
+	<input class="submitButton" type = "button" onClick="getData('bookingprocess.php', 'bookingStatus', firstName.value, lastName.value, mobileNumber.value, 
+			unitNumber.value, streetNumber.value, streetName.value, pickUpSuburb.value, destSuburb.value, date.value, time.value)" value = "Submit" > 
+	
+</div>
+
+<div id="bookingStatus">Booking Status: In Progress</div>
+     
+</body>
+
+</html>
